@@ -1,0 +1,167 @@
+/* Custom Styles untuk Aplikasi Perpustakaan */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Sidebar Styling */
+.bg-light {
+    background-color: #ffffff !important;
+    border-right: 1px solid #dee2e6;
+}
+
+.nav-pills .nav-link {
+    border-radius: 0.25rem;
+    margin-bottom: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.nav-pills .nav-link:hover {
+    background-color: #e9ecef;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #0d6efd;
+}
+
+/* Card Styling */
+.card {
+    border: none;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    margin-bottom: 1.5rem;
+}
+
+.card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    font-weight: 600;
+}
+
+/* Table Styling */
+.table {
+    margin-bottom: 0;
+}
+
+.table thead th {
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #dee2e6;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+/* Button Styling */
+.btn {
+    border-radius: 0.25rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styling */
+.form-control, .form-select {
+    border-radius: 0.25rem;
+    border: 1px solid #ced4da;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Badge Styling */
+.badge {
+    padding: 0.35em 0.65em;
+    font-weight: 500;
+}
+
+/* Alert Styling */
+.alert {
+    border-radius: 0.25rem;
+    border: none;
+}
+
+/* Login Page Styling */
+.vh-100 {
+    min-height: 100vh;
+}
+
+/* Book Cover Placeholder */
+.bg-secondary {
+    background-color: #6c757d !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .d-flex {
+        flex-direction: column !important;
+    }
+    
+    .sidebar {
+        width: 100% !important;
+        min-height: auto !important;
+    }
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Stats Card Enhancement */
+.card.text-white h2, .card.text-white h3 {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Hover Effect */
+.card-img-top {
+    transition: transform 0.3s ease;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+/* Footer Spacing */
+.flex-grow-1 {
+    min-height: 100vh;
+}
