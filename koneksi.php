@@ -4,12 +4,13 @@ if (session_status() === PHP_SESSION_NONE) {
 }
 
 // Koneksi database
-$host = 'localhost';
+$host = 'maglev.proxy.rlwy.net';
 $user = 'root';
-$pass = '';
-$db   = 'db_perpustakaan';
+$pass = 'toZSvsOOeZgGtOUxTzVGZGuXQhIipZjd';
+$db   = 'railway';
+$port = 37954;
 
-$koneksi = mysqli_connect($host, $user, $pass, $db);
+$koneksi = mysqli_connect($host, $user, $pass, $db, $port);
 
 if (!$koneksi) {
     die("Koneksi gagal: " . mysqli_connect_error());
