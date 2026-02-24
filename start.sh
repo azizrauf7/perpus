@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 set -e
 
 echo "Starting PHP-FPM..."
@@ -6,4 +6,4 @@ php-fpm -D
 sleep 2
 
 echo "Starting Nginx..."
-nginx -g "daemon off;"
+exec nginx -g "daemon off;"
